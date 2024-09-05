@@ -1,0 +1,144 @@
+.form-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fafafa;
+}
+
+.form-container{
+    width: 80%;
+    min-width: 300px;
+    height: 90%;
+    background: #fff;
+    overflow: hidden;
+    z-index: 2;
+    display: flex;
+    box-shadow: 0 0 100px rgba(0, 0 , 0, 0.2);
+}
+
+.form-img{
+    width: 40%;
+    height: 95%;
+    object-fit: fill;
+}
+
+.form{
+    width: 60%;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-heading{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    height: 20px;
+    border: 1px solid #b9b9b9;
+    margin: 5px 0;
+    padding: 10px;
+    line-height: 20px;
+    font-family: 'lato', sans-serif;
+    color: #000;
+    outline: none;
+    border-radius: 5px;
+}
+
+::placeholder{
+    text-transform: capitalize;
+    color: #b9b9b9;
+}
+
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input:focus{
+    border: 2px solid #d5be8b;
+}
+
+.coding{
+    margin-top: 10px;
+}
+
+.coding input{
+    margin: 0 10px 0;
+}
+
+.coding-heading{
+    margin: 0;
+}
+
+.Programming-languages{
+    margin-top: 10px;
+}
+
+.Programming-languages input{
+    margin: 0 10px 0;
+}
+
+.language-heading{
+    margin: 0;
+}
+
+#tc{
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 1px solid #b9b9b9;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    
+    margin-bottom: 0;
+}
+
+
+.tc-text{
+    margin-left: 5px;
+    font-size: .8rem;
+    font-family: 'lato', sans-serif;
+}
+
+.tc-text a{
+    color: #000;
+}
+
+.upload{
+    display: flex;
+    margin-top: -10px;
+}
+
+#myFile{
+    margin-top: 0;
+    width: 65%;
+}
+
+.submit-btn{
+    display: block;
+    margin: 10px 0;
+    width: 100px;
+    padding: .8rem 0;
+    border-radius: 0;
+    background: #7e7c77;
+    color: #fff;
+    font-family: 'cinzel';
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.other-form-link{
+    font-family: 'lato', sans-serif;
+    columns: #000;
+    font-size: 0.8rem;
+}

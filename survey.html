@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="survey.css">
+
+</head>
+<body>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form">
+                <h1 class="form-heading">Survey form</h1>
+                <input type="text" autocomplete="off" id="name" placeholder="full name">
+                <input type="email" autocomplete="off" id="email" placeholder="email">
+                <input type="age" autocomplete="off" id="age" placeholder="age">
+                <input type="number" autocomplete="off" id="number" placeholder="phone number">
+                
+                <div class="coding">
+                    <h2 class="coding-heading">Programming Approach:</h2>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Frontend</label>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Backend</label>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Full stack</label>
+                </div>
+
+                <div class="Programming-languages">
+                    <h2 class="language-heading">Favourite Programming Languages:</h2>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >C/C++</label>                   
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Java</label>                    
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Python</label>                    
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >Java Script</label>                    
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >SQL</label>
+                    <input type="checkbox" id="tc"><label for="tc" class="tc-text" >PHP</label>
+                </div>
+            
+                <div class="upload">
+                    <form action="/action_page.php">
+                        <h2>Upload file/image:</h2>
+                        <input type="file" id="myFile" name="filename">
+                    </form>
+
+                    <form action="/action_page.php">
+                        <h2>Upload Resume:</h2>
+                        <input type="file" id="myFile" name="filename">
+                    </form>
+                </div>
+
+                <button class="submit-btn">Submit</button>
+            </div>
+            <img src="images/macky tech logo.png" class="form-img" alt="">
+        </div>
+    </section>
+
+
+    
+</body>
+</html>
