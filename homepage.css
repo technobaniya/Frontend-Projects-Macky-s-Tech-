@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body{
+    font-family: 'cinzel', serif;
+}
+
+.navbar{
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 9;
+    transition: 0.5s;
+}
+
+.navbar.bg{
+    background: #fff;
+
+}
+
+.logo-img{
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 80px;
+    height: 80px;
+}
+
+.links-container{
+    text-transform: capitalize;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.link-item{
+    margin: 10px;
+}
+
+.link{
+    font-size: 20px;
+    color: #f4f1f1;
+    text-decoration: none;
+    padding: -10px;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+.navbar.bg .link{
+    color: #000;
+    opacity: .5s;
+}
+
+.link.active, .link:hover, .navbar.bg .link:hover, .navbar.bg .link.active{
+    opacity: 1;
+}
+
+.user-interaction{
+
+    font-family: 'cinzel', sans-serif;
+    display: flex;
+    position: absolute;
+    right: 5vw;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.buy-btn{
+    padding: 7px;
+    font-family: 'cinzel', sans-serif;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #d5be8b;
+}
+
+
+.header-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+.header-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section-info{
+    text-transform: capitalize;
+    margin-top: 100px;
+    width: 40%;
+    height: 80%;
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+.header-heading{
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.header-heading span{
+    color: cadetblue;
+}
+
+.header-des{
+    font-family: 'lato', sans-serif;
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 20px;
+    opacity: 1;
+    color: darkgray;
+}
+
+.header-buttons{
+    margin-top: 15px;
+}
+
+.read-more-btn{
+    padding: 7px;
+    font-family: 'cinzel', sans-serif;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #d5be8b;
+}
+
+.conact-us-btn{
+    margin-left: 20px;
+    padding: 7px;
+    font-family: 'cinzel', sans-serif;
+    font-size: 20px;
+    border-radius: 10%;
+    cursor: pointer;
+    background-color: #d0d58b;
+}
+
+.wealth-section{
+    background-color: rgb(97, 185, 240);
+    position: relative;
+    padding: 60px 5vw;
+}
+
+.Company-wealth{
+    text-transform: capitalize;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.wealth-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.wealth{
+    border: 15px solid #d5be8b;
+    background: cadetblue;
+    
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.wealth-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.wealth-title{
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 50px;
+    font-family: 'lato', sans-serif;
+    font-size: 40px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+
+
+.info{
+    position: absolute;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: 'lato', sans-serif;
+    font-size: 20px;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+.wealth:hover .wealth-title{
+    opacity: 1;
+}
+
+.wealth:hover .info{
+    opacity: 1;
+}
+
+.wealth:hover .wealth-img{
+    opacity: 0.5;
+
+}
+/*team-card*/
+
+.containor{
+    background: #4658ff;
+}
+.slider-wraaper{
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 70px 55px;
+}
+.card-list{
+    margin-top: 30px;
+}
+
+.card-list .card-item {
+    color: #fff;
+    user-select: none;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    backdrop-filter: blur(30px);
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-list .card-item .user-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    border: 3px solid #fff;
+    padding: 4px;
+}
+
+.card-list .card-item .user-profession{
+    font-size: 1.15rem;
+    color: #e3e3e3;
+    font-weight: 500;
+    margin: 14px 0 40px;
+}
+.card-list .card-item .message-button{
+    font-size: 1.25rem;
+    padding: 10px 35px;
+    color: #030728;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .message-button:hover{
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+
+.slider-wraaper .swiper-pagination-bullet{
+    background: #fff;
+    height: 15px;
+    width: 15px;
+}
+
+.slider-wraaper .swiper-slide-button{
+    color: #fff;
+    margin-top: -50px;
+    transition: 0.2s ease;
+}
+
+.slider-wraaper .swiper-slide-button:hover{
+    color: #4658ff;
+}
+
+.footer{
+    background: url(images/footer.png);
+    width: 100%;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.footer .container {
+    padding-top: 30px;
+    align-items: center;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer .container div {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer .social-icons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .social-icons a {
+    margin-right: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .social-icons a:hover {
+    color: #ddd;
+}
+
